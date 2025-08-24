@@ -36,12 +36,15 @@ hello <- function(name) {
 #' weather()
 
 weather <- function() {
-  zeus <- sample(c(1, 2, 3), 1)
+  zeus <- sample(c(1, 2, 3, 4), 1)
   forecast <- ifelse(zeus == 1,
     "Great sunny wheather today!",
     ifelse(zeus == 2,
       "Partly cloudy today.",
-      "Thunderstorm today, sorry..."
+      ifelse( zeus==3,
+      "Thunderstorm today, sorry...",
+      "Let's build a snowman!"
+    )
     )
   )
   return(forecast)
