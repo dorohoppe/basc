@@ -2,3 +2,13 @@ url: https://dorohoppe.github.io/basc/
 template:
   bootstrap: 5
 
+  reference:
+  - title: Package
+    contents:
+      - basc-package
+  - title: Functions
+    contents:
+      - hello
+      - weather
+
+
